@@ -49,10 +49,12 @@ async def rita(ctx):
             if submission.author == rita and postText in submission.title.lower():
                 jimmyG = submission.url
                 if jimmyG_old == jimmyG:
+                    sleep(300)
                     break
                 else:
                     jimmyG_old = jimmyG
                     await ctx.send(jimmyG)
-        sleep(60)
+                    sleep(42300)
+        sleep(300)
 
 bot.run(TOKEN)
